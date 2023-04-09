@@ -1,0 +1,48 @@
+git init #Inicializacija na git
+git remote add origin https://github.com/KoruViktor/SI_2023_lab1_216120.git #Dodavanje na remote repo
+git add README.md #dodavanje na readme dokumetot so ime prezime indeks
+git commit -m "Initial commit" #cekor 6.
+git add SILab1.java #dodavanje na java klasa
+git commit -m "Add java class" #cekor 7.
+git push origin master #cekor 8.
+git branch bug1 #cekor 9.1
+git branch bug2 #cekor 9.2
+git branch bug3 #cekor 9.3
+git checkout bug1 #cekor 10
+git add SILab1.java #cekor 11 poslem popravka na buggot
+git commit -m "Fix wrong loop for reading" #cekor 11 commitot
+git checkout bug2 #cekor 12
+git add SILab1.java #cekor 13 poslem popravka na buggot
+git commit -m "Fix wrong condition in filterOddNumbers" #commit za istiot cekor 13
+git checkout bug3 #cekor 14
+git add . #cekor 15
+git commit -m "Fix method sumEvenNumbers" #cekor 15 commit poslem greska fix
+git push origin bug3 #cekor 16 sihronizacija
+git checkout bug2 #prefrluvanje za cekor 16
+git push origin bug2 #cekor 16 sihronizacija
+git checkout bug1 #prefrluvanje za cekor 16
+git push origin bug1 #cekor 16 sihronizacija
+git checkout master #prefrluvanje za cekor 17
+git merge bug1 #spojuvanje na granka bug1 so master cekor 18 bez konflikti i bez potreba od strategija
+git push origin master  #sihronizacija za cekor 19
+git merge bug2 #spojuvanje na granka bug2 so master cekor 20 bez konflikti i bez potreba od strategija
+git push origin master #sihronizacija za cekor 21
+git checkout bug3 #cekor 22
+git log #sama proverka do kade sum, ne e del od labs
+git rebase master #cekor 23 rebase succesfully
+git checkout master #cekor 24
+git merge bug3 #chekor 25 spojuvanje na granka bug3 so master bez konflikti i bez potreba od strategija bidejki uspesen rebase
+git push origin master
+git checkout bug1 #del od chekor 26
+git push origin bug1 #del od chekor 26 uspesen
+git checkout bug2 #del od chekor 26
+git push origin bug2 #del od chekor 26 uspesen
+git checkout bug3 #del od chekor 26 uspesen
+git push origin bug3 #del od chekor 26 ne uspesen
+git push origin bug3 --force #del od chekor 26 uspesen so upotreba na --force predizvikano bidejki rebasot
+git checkout master #del od chekor 27
+git log #del od chekor 27 za vo logs.txt dokumentot
+git add logs.txt #del od chekor 27
+git add 216120.txt #del od chekor 27 za ovaj dokument dokumnetacija
+git commit -m "Final commit"
+git push origin master
